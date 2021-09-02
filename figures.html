@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>geometric figures</title>
+    <script src="figures.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <img
+        class="header__img"
+        src="https://img.icons8.com/ios/250/000000/calculator--v2.png"
+        alt="logo"
+      />
+      <h2>Let's play with a calculator of perimeters and area</h2>
+    </header>
+    <main class="main">
+      <h1>  Calculator of area and perimeter</h1>
+      <section class="main__section">
+        <div class="section__square">
+          <div class="main__section--item">
+            <div class="main__section--title">
+              <img src="./img/icons8-vista-ortogonal-100.png" alt="squeare" />
+              <h2>Calculating Area and Perimeter of a Square</h2>
+            </div>
+            <form action="">
+              <label for="inputCuadrado">
+                How long is each side of your square?
+              </label>
+              <input
+                class="input__text"
+                placeholder="side"
+                type="number"
+                id="inputCuadrado"
+              />
+              <button
+                class="btn--input"
+                type="button"
+                onclick="calcularPermietro()"
+              >
+                Calculate Perimeter
+              </button>
+              <p id="resultSquareP"></p>
+              <button class="btn--input" type="button" onclick="calcularArea()">
+                Calculate area
+              </button>
+              <p id="resultSquareA"></p>
+            </form>
+          </div>
+          <div class="section__text">
+            <h1>Perimeter of square</h1>
+            <p>
+              The perimeter of a square is defined as the total length that its
+              boundary covers. The perimeter of any closed geometrical object is
+              calculated by finding the distance around that object. For a
+              square, the perimeter can be calculated by finding the sum of all
+              the sides. Let us have a look at the article in order to
+              understand the concept in a better way.
+            </p>
+            <h2>What is the Perimeter of Square?</h2>
+            <p>
+              A perimeter of any shape is either a path that
+              encompasses/surrounds/outlines a shape (in two dimensions) or its
+              length (one-dimensional). The perimeter of a square can be
+              calculated by adding the length of all its sides.
+            </p>
+            <h2>Perimeter of Square Formula</h2>
+            <p>(P) = 4 × Side</p>
+          </div>
+          <div class="section__text">
+            <h1>Area of the square</h1>
+            <p>
+              In the above section, we covered the definition of area of square
+              as well as area of square formula. In this section let us
+              understand how to use the area of the square formula to find its
+              area with the help of few applications or real-world examples.
+            </p>
+            <h2>What is a area of the square</h2>
+            <p>
+              A square is a closed two-dimensional shape with four equal sides
+              and four equal angles. The four sides of the square form the four
+              angles at the vertices. The sum of the total length of the sides
+              of a square is its perimeter, and the total space occupied by the
+              square is the area of the square. It is a quadrilateral with the
+              following properties.
+            </p>
+            <h2>Area of squeare formula</h2>
+            <p>Area of a square = Side × Side = S2</p>
+          </div>
+        </div>
+      </section>
+      <section class="main__section">
+        <div class="section__square">
+          <div class="main__section--item">
+            <div class="main__section--title">
+              <img src="./img/icons8-triángulo-64.png" alt="triangle" />
+              <h2>Calculating Area and Perimeter of a Triangle</h2>
+            </div>
+            <form action="">
+              <label for="inputTriangulo1">Side 1</label>
+              <input
+                class="input__text"
+                placeholder="Side 1"
+                type="number"
+                id="inputTriangulo1"
+              />
+              <label for="inputTriangulo2">Side 2</label>
+              <input
+                class="input__text"
+                placeholder="Side 2"
+                type="number"
+                id="inputTriangulo2"
+              />
+              <label for="inputTriangulo3">Base</label>
+              <input
+                class="input__text"
+                placeholder="Base"
+                type="number"
+                id="inputTriangulo3"
+              />
+              <button
+                class="btn--input"
+                type="button"
+                onclick="calcularPermietroTriangulo()"
+              >
+                Calculate perimeter
+              </button>
+              <p id="resultTriangleP"></p>
+              <label for="inputTriangulo4">Height</label>
+              <input
+                class="input__text"
+                placeholder="Base"
+                type="number"
+                id="inputTriangulo4"
+              />
+              <button
+                class="btn--input"
+                type="button"
+                onclick="calcularAreaTriangulo()"
+              >
+                Calculate area
+              </button>
+              <p id="resultTriangleA"></p>
+            </form>
+          </div>
+          <div class="section__text">
+            <h1>Perimeter of Triangle</h1>
+            <p>
+              The perimeter of any two-dimensional figure is defined as the
+              distance around the figure. We can calculate the perimeter of any
+              closed shape just adding up the length of each of the sides. In
+              this article, you will first learn about what is the perimeter,
+              how to find the perimeter of different types of triangles when all
+              side lengths are known. Furthermore, the solved examples will help
+              you to get more views on the topic.
+            </p>
+            <h2>What is the Perimeter of Triangle?</h2>
+            <p>
+              The sum of the lengths of the sides is the perimeter of any
+              polygon. In the case of a triangle, Perimeter = Sum of the three
+              sides Always include units in the final answer. If the sides of
+              the triangle are measured in centimetres, then the final answer
+              should also be in centimetres.
+            </p>
+            <h2>Perimeter of Triangle Formula</h2>
+            <p>Perimeter, P = a + b +c</p>
+          </div>
+          <div class="section__text">
+            <h1>Area of the Triangle</h1>
+            <p>
+              The area of a triangle is defined as the total space occupied by
+              the three sides of a triangle in a 2-dimensional plane. The basic
+              formula for the area of a triangle is equal to half the product of
+              its base and height, i.e., A = 1/2 × b × h.
+            </p>
+
+            <h2>What is a area of the Triangle</h2>
+            <p>
+              The area of a triangle is the region enclosed between the sides of
+              the triangle. Depending on the length of the sides and the
+              internal angles, the area of a triangle varies from one triangle
+              to another. The unit of area is measured in square units, for
+              example, m2, cm2, in2, etc
+            </p>
+            <h2>Area of Triangle formula</h2>
+            <p>A = 1/2 × b × h</p>
+          </div>
+        </div>
+      </section>
+      <section class="main__section">
+        <div class="section__square">
+          <div class="main__section--item">
+            <div class="main__section--title">
+              <img src="./img/icons8-círculo-100.png" alt="circle" />
+              <h2>Calculating Area and Perimeter of a Circle
+              </h2>
+            </div>
+            <form action="">
+              <label for="inputCirculo"> Radius </label>
+              <input
+                class="input__text"
+                placeholder="radius"
+                type="number"
+                id="inputCirculo"
+              />
+              <button
+                class="btn--input"
+                type="button"
+                onclick="calcularPermietroCirculo()"
+              >
+                Calculate perimeter
+              </button>
+              <p id="resultCircleP"></p>
+              <button
+                class="btn--input"
+                type="button"
+                onclick="calcularAreaCirculo()"
+              >
+                Calculate area
+              </button>
+              <p id="resultCircleA"></p>
+            </form>
+          </div>
+          <div class="section__text">
+            <h1>Perimeter of circle</h1>
+            <p>
+              Perimeter is defined as the distance around a given area. Think of
+              calculating how long a fence would be that completely surrounds
+              your property. Perimeter is generally calculated by adding the
+              lengths of all of the sides. Circles have no straight lines that
+              are easily measured. Therefore, they require a special formula to
+              determine perimeter.
+            </p>
+            <h2>What is the Perimeter of circle?</h2>
+            <p>
+              Learn that the perimeter of a circle has its own special name,
+              called "circumference." The symbol is a capital C. It is
+              calculated using the formula Pi x diameter, or 3.14 x d = C. It
+              can also be calculated by Pi x (2 x radius) = C or 3.14 x (2 x r)
+              = C
+            </p>
+            <h2>Perimeter of circle Formula</h2>
+            <p>Perimeter (P) = 2 · π · R</p>
+          </div>
+          <div class="section__text">
+            <h1>Area of the circle</h1>
+            <p>
+              The area of a circle is the space occupied by the circle in a two-dimensional plane. Alternatively, the space occupied within the boundary/circumference of a circle is called the area of the circle.
+            </p>
+            <h2>What is a area of the circle</h2>
+            <p>
+              The area of a circle is the amount of space enclosed within the boundary of a circle. The region within the boundary of the circle is the area occupied by the circle. It may also be referred to as the total number of square units inside that circle.            </p>
+            <h2>Area of circle formula</h2>
+            <p>Area = π × r2, where 'r' is the radius</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h4>Made by: Steffany Naranjo</h4>
+      <ul>
+        <li>
+          <img src="./img/icons8-github-60.png" alt="logo-github" />
+          <a href="https://github.com/steffanynaranjov" target="_blank"
+            >Github</a
+          >
+        </li>
+        <li>
+          <img src="./img/icons8-linkedin-60.png" alt="logo-github" />
+          <a
+            href="https://www.linkedin.com/in/steffanynaranjov/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <img src="./img/icons8-twitter-60.png" alt="logo-twitter" />
+          <a href="https://twitter.com/NaranjoSteffany" target="_blank"
+            >Twitter</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
